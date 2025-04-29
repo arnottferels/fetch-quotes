@@ -61,7 +61,7 @@ jobs:
         run: |
           git checkout main
           git add .
-          git commit -m "Update `$FILE_NAME` ($FETCH_DATE $CRON_TIME)"
+          git commit -m "Update $FILE_NAME ($FETCH_DATE $CRON_TIME)"
 
       - name: Push changes
         if: steps.check_changes.outputs.changes == 'true'
