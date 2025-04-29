@@ -2,11 +2,11 @@ name: Fetch quotes
 
 on:
   workflow_dispatch:
-  schedule:
+  # schedule:
     # Runs every hour at minute 0 (UTC)
     # - cron: "0 * * * *"
 
-    - cron: "*/15 6,7,8 * * 1,2,3,4,5"
+    # - cron: "*/15 6,7,8 * * 1,2,3,4,5"
 
 permissions:
   contents: write
